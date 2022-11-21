@@ -11,13 +11,13 @@ public class KeypadApp {
 	}
 	
 	public static void main(String[] args) {
+		long startTime = System.nanoTime();
 		Random rand = new Random();
 		KeypadApp keypad = new KeypadApp();
 		int count = 0;
 		
 		while(true) {
 			int randomNumber = rand.nextInt(2099999999);
-			System.out.println(randomNumber);
 			//if (Integer.toString(randomNumber).contains(Integer.toString(keypad.lockingCode))) {
 			//	System.out.println("Locked.");
 			//	break;
@@ -26,13 +26,18 @@ public class KeypadApp {
 				System.out.println("Unlocked.");
 				break;
 			}
-			
+			count = count + 1;
 			
 		}
+		long endTime   = System.nanoTime();
+		long totalTime = endTime - startTime;
+		System.out.println("It took: " + totalTime/1000000 + " milliseconds to run the program and crack the code.");
+		System.out.println("It would take a hacker: " + count + " seconds to unlock the code.");
+		int minutes = count/60;
+		System.out.println("or around " + minutes + " minutes.");
+		int hours = count/3600;
+		System.out.println("or around " + hours + " hours.");
 		
-		
-		
-	
 	}
 
 }
