@@ -6,7 +6,9 @@ This programming assignment has the ability to "lock and unlock" a mechanism and
 
 **HOW TO BUILD AND RUN EXECUTABLE**
 
-Buidling an executable is a somewhat annoying process on MacOS. First, you have to create new folders in the finder and then create new 'classes' and 'sources' folders. You then drag the .java files into the 'sources' folder. You then go into your terminal and type some terminal commands to create .class files of your .java files. After that, you create your manifest.txt files and also save that into your 'classes' folder. After that, you have to use more terminal commands and then you end up with an executable file you can send to others. To run the executable, you just need to download and open the .jar file and the file should prompt you to click abutton to run the program and get numbers that are interesting to see and help with your predictions needed in part 2. You could also go to the GitHub upload of the .jar file, click "view raw" and click the downloaded file. This should be able to run the file as well.
+Buidling an executable is a somewhat annoying process on MacOS. First, you have to create new folders in the finder and then create new 'classes' and 'sources' folders. You then drag the .java files into the 'sources' folder. You then go into your terminal and type some terminal commands to create .class files of your .java files. After that, you create your manifest.txt files and also save that into your 'classes' folder. After that, you have to use more terminal commands and then you end up with an executable file you can send to others. 
+
+To run the executable, you need to clone the git repository and go to the directory wehre the cloned repository is located. You then can go into the repository and in the terminal type: **java -jar KeyPadGUI.jar**. This should run the executable file and an interface with a button should pop up. When you press the button, it will give the status of the lock, how long it took the program to run, and how long it would take a hacker to hack the code if given 1 second per guess. 
 
 **HOW TO GENERATE UNIT TEST COVERAGE**
 
