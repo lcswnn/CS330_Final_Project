@@ -6,7 +6,7 @@ This programming assignment has the ability to "lock and unlock" a mechanism and
 
 **HOW TO BUILD AN EXECUTABLE**
 
-Buidling an executable is a somewhat annoying process on MacOS. First, you have to create new folders in the finder and then create new 'classes' and 'sources' folders. You then drag the .java files into the 'sources' folder. You then go into your terminal and type some terminal commands to create .class files of your .java files. After that, you create your manifest.txt files and also save that into your 'classes' folder. After that, you have to use more terminal commands and then you end up with an executable file you can send to others. 
+1.) 
 
 **HOW TO RUN THE EXECUTABLE**
 
