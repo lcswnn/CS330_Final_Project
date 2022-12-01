@@ -10,7 +10,7 @@ This programming assignment has the ability to "lock and unlock" a mechanism and
 
 **HOW TO RUN THE EXECUTABLE**
 
-To run the executable, you need to clone the git repository in a terminal and go to the directory where the cloned repository is located. You then can go into the repository (using **cd CS_330_Final_Project**). Once in the repository you can type in the terminal: **java -jar KeyPadGUI.jar**. This should run the executable file and an interface with a button should pop up. When you press the button, it will give the status of the lock, how long it took the program to run, and how long it would take a hacker to hack the code if given 1 second per guess. (Finding how long it takes the lock to unlock, the status will always say unlocked. This is because it finds how long it would take for a program like this to find the codes.)
+To run the executable, you need to clone the git repository in a terminal and go to the directory where the cloned repository is located. You then can go into the repository (using **cd CS_330_Final_Project**). Once in the repository you can type in the terminal: **java -jar RunnableGUI.jar**. This should run the executable file and an interface with a button should pop up. When you press the button, it will give the status of the lock, how long it took the program to run, and how long it would take a hacker to hack the code if given 1 second per guess. (Finding how long it takes the lock to unlock, the status will always say unlocked. This is because it finds how long it would take for a program like this to find the codes.)
 
 **HOW TO GENERATE UNIT TEST COVERAGE**
 
