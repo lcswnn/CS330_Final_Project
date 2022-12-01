@@ -12,7 +12,7 @@ To turn the GUI.java file into a .jar file, you can use Eclipse's "**File -> Exp
 
 **HOW TO RUN THE EXECUTABLE**
 
-To run the executable, you can do one of two things. You can either open the terminal, navigate to where the .jar file is located, and type into the terminal, "**java -jar RunnableGUI.jar**". This will run the .jar file like you just clicked it straight and will open the Guided Interface for you to interact with. Or, you can save the .jar file to a directory of your choosing and double click the file. This will also open the JFrame and GUI and will allow you to run the executable.
+To run the executable, you can do one of two things. You can first clone the git to a directory of your choice. Then, navigate into the cloned git folder inside the command prompt or terminal. Then, type into the terminal, "**java -jar RunnableGUI.jar**". This will run the .jar file like you just clicked it straight and will open the Guided Interface for you to interact with. Or, you can save the .jar file to a directory of your choosing and double click the file. This will also open the JFrame and GUI and will allow you to run the executable.
 
 **HOW TO GENERATE UNIT TEST COVERAGE**
 
