@@ -8,7 +8,19 @@ This programming assignment has the ability to "lock and unlock" a mechanism and
 
 First, the Keypad class was created. This created the consturctors for the GUI class to take in the values of the variables used. After the Keypad was finished, the GUI class was created. This is the execuatble Java file that can run when turned into the .jar file. In the GUI class was the public static void method that executes the code when you run in the IDE and the .jar file through the terminal. The GUI class creates a Guided-User-Interface that consists of a JFrame (the window itself), a JLabel that tells the user if the mechanism is unlocked or not, and a JTextField that the user can type a string of numbers and characteres into. 
 
-To turn the GUI.java file into a .jar file, you can use Eclipse's "**File -> Export**" feature. You can export the file as a Runnable .jar file to a directory of your choosing. This then creates a runnable, execuatble .jar file that you can open just by clicking on, or through the terminal. The .jar file would have the same Guided-User-Interface as the program in the IDE. This .jar file was then uploaded to GitHub along with the updated .java files.
+To turn the java files into a runnable .jar file, a manifest.txt document and terminal commands are used. Create a text file and title it **manifest.mf**. In the manifest file, type "**Main-Class: mainFileName**" and make sure to add a return at the end. Save it to the src directory in your workspace. Next, navigate to the src directory in a terminal or command prompt and type:
+
+>javac *.java
+
+This will turn all .java files into .class files, which you will use next. While still in the directory with the .class files (should be src folder), type into the terminal/command prompt:
+
+>jar cfm nameOfFile.jar manifest.mf *.class
+
+This will create an executable .jar file that you can run through the terminal/command prompt. To do so, just type:
+
+>java -jar nameOfFile.jar
+
+to run the executable file.
 
 **HOW TO RUN THE EXECUTABLE**
 
