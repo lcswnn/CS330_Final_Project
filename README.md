@@ -20,7 +20,7 @@ This will create an executable .jar file that you can run through the terminal/c
 
 >java -jar nameOfFile.jar
 
-to run the executable file.
+to run the executable file. This file has the ability to be run through the terminal and double clicked with the mouse cursor.
 
 **HOW TO RUN THE EXECUTABLE**
 
