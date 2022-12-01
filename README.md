@@ -14,17 +14,21 @@ To turn the java files into a runnable .jar file, a manifest.txt document and te
 
 This will turn all .java files into .class files, which you will use next. While still in the directory with the .class files (should be src folder), type into the terminal/command prompt:
 
->jar cfm nameOfFile.jar manifest.mf *.class
+>jar cfm name_Of_File.jar manifest.mf *.class
 
 This will create an executable .jar file that you can run through the terminal/command prompt. To do so, just type:
 
->java -jar nameOfFile.jar
+>java -jar name_Of_File.jar
 
-to run the executable file. This file has the ability to be run through the terminal and double clicked with the mouse cursor.
+to run the executable file. This file has the ability to be run through the terminal and double clicked with the mouse cursor. In the case of this 
 
-**HOW TO RUN THE EXECUTABLE**
+**HOW TO RUN THE EXECUTABLE IN THE GITHUB REPO**
 
-To run the executable, you can do one of two things. You can first clone the git to a directory of your choice. Then, navigate into the cloned git folder inside the command prompt or terminal. Then, type into the terminal, "**java -jar RunnableGUI.jar**". This will run the .jar file like you just clicked it straight and will open the Guided Interface for you to interact with. Or, you can save the .jar file to a directory of your choosing and double click the file. This will also open the JFrame and GUI and will allow you to run the executable.
+In the GitHub repo, there is a .jar file named **RunnableGUI.jar**. To run this file, first clone the git repository to a directory of your choice. Next, navigate to that directory where you cloned the git repo and navigate into the folder it created. Once in the folder the git clone created, you should see 2 .java files, the README.md, and the RunnableGUI.jar. In the terminal/command prompt, type:
+
+>java -jar RunnableGUI.jar
+
+This should run the interface, the JFrame should pop up, and you should be able to type in the JTextField text box.
 
 **HOW TO GENERATE UNIT TEST COVERAGE**
 
