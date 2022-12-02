@@ -33,7 +33,7 @@ In the GitHub repo, there is a .jar file named **RunnableGUI.jar**. To run this 
 
 >java -jar FinalProject.jar
 
-This should run the interface, the JFrame should pop up, and you should be able to type in the JTextField text box.
+This should run the interface, the JFrame should pop up, and you should be able to type in the JTextField text box. To test the program, delete the text "**Type Here**", then begin.
 
 **HOW TO GENERATE UNIT TEST COVERAGE**
 
