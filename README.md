@@ -8,25 +8,26 @@ This programming assignment has the ability to "lock and unlock" a mechanism and
 
 First, the Keypad class was created. This created the consturctors for the GUI class to take in the values of the variables used. After the Keypad was finished, the GUI class was created. This is the execuatble Java file that can run when turned into the .jar file. In the GUI class was the public static void method that executes the code when you run in the IDE and the .jar file through the terminal. The GUI class creates a Guided-User-Interface that consists of a JFrame (the window itself), a JLabel that tells the user if the mechanism is unlocked or not, and a JTextField that the user can type a string of numbers and characteres into. 
 
-To turn the java files into a runnable .jar file, a manifest.txt document and terminal commands are used. Create a text file and title it **manifest.mf**. In the manifest file, type "**Main-Class: mainFileName**" and make sure to add a return at the end. Save it to the src directory in your workspace. Next, navigate to the src directory in a terminal or command prompt and type:
+To turn the java files into a runnable .jar file, you need the .java files of your project and a manifest.txt file that specifies which .java file is the "Main" class. The manifeset.txt file should be formatted as:
+
+>Main-Class: nameOfMainClass
+
+with a return at the end of the line. (The manifest.txt file is in the git repository. No need to make or edit the file.) Next, when the manifeset.txt file is in the folder with the .java files, go into the cloned git repo directory in your terminal/command prompt and type:
 
 >javac *.java
 
-This will turn all .java files into .class files, which you will use next. While still in the directory with the .class files (should be src folder), type into the terminal/command prompt:
+This will turn all .java files into .class files, which you will use next. While still in the directory, type into the terminal/command prompt:
 
 >jar cfm name_Of_File.jar manifest.mf *.class
 
-This will create an executable .jar file that you can run through the terminal/command prompt. To do so, just type:
+This will create an executable .jar file that you can run through the terminal/command prompt.
 
->java -jar name_Of_File.jar
-
-to run the executable file. This file has the ability to be run through the terminal and double clicked with the mouse cursor. In the case of this 
 
 **HOW TO RUN THE EXECUTABLE IN THE GITHUB REPO**
 
 In the GitHub repo, there is a .jar file named **RunnableGUI.jar**. To run this file, first clone the git repository to a directory of your choice. Next, navigate to that directory where you cloned the git repo and navigate into the folder it created. Once in the folder the git clone created, you should see 2 .java files, the README.md, and the RunnableGUI.jar. In the terminal/command prompt, type:
 
->java -jar RunnableGUI.jar
+>java -jar name_Of_File.jar
 
 This should run the interface, the JFrame should pop up, and you should be able to type in the JTextField text box.
 
